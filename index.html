@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: rgb(100, 100, 100);
+        min-height: 100vh;
+      }
+      div {
+        background-color: #333;
+        padding: 1rem;
+        border-radius: 8px;
+        transition: 0.15s;
+      }
+      div:hover {
+        background-color: #454545;
+        cursor: pointer;
+      }
+    </style>
+    <title>Hello</title>
+  </head>
+  <body>
+    <div>
+      <img src="./public/eyes.png" />
+    </div>
+    <script>
+      document
+        .querySelector("div")
+        .addEventListener("mouseenter", (e) =>
+          e.target.children[0].setAttribute("src", "./public/eyes.gif")
+        );
+      document
+        .querySelector("div")
+        .addEventListener("mouseleave", (e) =>
+          e.target.children[0].setAttribute("src", "./public/eyes.png")
+        );
+    </script>
+  </body>
+</html>
