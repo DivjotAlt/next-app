@@ -12,7 +12,7 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-12 lg:p-24 ">
         <div className=" bg-gray-900 p-5 rounded-lg flex flex-wrap gap-6 max-w-4xl items-center justify-center">
           <div className=" w-full">
-            <h1 className=" text-5xl font-bold text-center">Gif Showcase</h1>
+            <h1 className=" text-4xl md:text-5xl font-bold text-center">Gif Showcase</h1>
           </div>
 
           {["eyes", "animation", "cat", "earth", ...[0, 1, 2, 3, 7].map(n => `david${n}`)].map((fileName) => {
